@@ -2,39 +2,45 @@
 @import 'base/variables'
 	
 .container	
-	width: 1120px
+	width: 1150px
 	margin: 0 auto
 
 .complex	
-	min-height: 840px
+	height: 840px
 	background: url('../img/complex.jpg') center center/cover no-repeat
 
-header
-	padding: 30px
-nav
-	display: flex
-	justify-content: end
-.menu	
+// header
 	
-	&_list
+nav
+	display: flex	
+	justify-content: space-between
+	
+.menu	
+	display: flex
+	margin-top: 55px
+	&_link
 		display: flex
-		justify-content: space-between
+		// justify-content: space-between
+		list-style: none
+		&_list
+			text-decoration: none
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.05em
+			color: #FFFFFF
+			margin: 0 40px
+		
 
-li	
-	list-style: none
-	font-family: 'Raleway'
-	font-style: normal
-	font-weight: 400
-	font-size: 14px
-	line-height: 16px
-	letter-spacing: 0.05em
-	color: #FFFFFF
-	margin: 0 40px
-
-.house_logo	
-	width: 100%
+.logo_house	
+	display: block
+	&_vop
+		width: 100%
+		margin-top: 30px
 	&_services
-		margin-top: 15px 
+		margin-top: 15px
 		font-family: 'Raleway'
 		font-style: normal
 		font-weight: 400
@@ -42,16 +48,3 @@ li
 		line-height: 14px
 		letter-spacing: 0.12em
 		color: #FFFFFF
-
-.main_text
-	font-family: 'Playfair Display'
-	font-style: normal
-	font-weight: 700
-	font-size: 48px
-	line-height: 64px
-	text-align: center
-	color: $main-color
-	width: 556px
-.mouse
-	display: block
-	margin: 0 auto
