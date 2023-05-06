@@ -1,26 +1,28 @@
 @import 'base/mixins'
 @import 'base/variables'
+@import 'block/title'
 	
 .container	
-	width: 1150px
+	width: 1140px
 	margin: 0 auto
 
 .complex	
 	height: 840px
 	background: url('../img/complex.jpg') center center/cover no-repeat
 
-// header
+header
+	padding: 0 0 74px 0
+	
 	
 nav
-	display: flex	
-	justify-content: space-between
+	display: flex
+	justify-content: space-between	
 	
 .menu	
 	display: flex
-	margin-top: 55px
 	&_link
 		display: flex
-		// justify-content: space-between
+		margin-top: 55px
 		list-style: none
 		&_list
 			text-decoration: none
@@ -32,8 +34,6 @@ nav
 			letter-spacing: 0.05em
 			color: #FFFFFF
 			margin: 0 40px
-		
-
 .logo_house	
 	display: block
 	&_vop
@@ -48,3 +48,56 @@ nav
 		line-height: 14px
 		letter-spacing: 0.12em
 		color: #FFFFFF
+.subcomplex	
+	&_mouse
+		margin-top: 100px
+		text-align: center	
+
+.subcomplex_wrapper
+		display: flex
+		justify-content: space-around
+		margin-top: 200px
+		position: relative
+.links_item
+	position: relative
+	text-decoration: none		
+	font-family: 'Raleway'
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	color: #FFFFFF
+	// margin: 0 100px
+	&::before
+		content: ''
+		position: absolute
+		top: 0px
+		left: -26px
+		width: 15px
+		height: 21px
+		background: url('../icons/Group.svg') center center/cover no-repeat
+.links_items
+		position: relative
+		text-decoration: none		
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		color: #FFFFFF
+		// margin: 0 100px
+		&:before
+			content: ''
+			position: absolute
+			top: 0px
+			left: -26px
+			width: 15px
+			height: 21px
+			background: url('../icons/phone-call.svg') center center/cover no-repeat
+
+.reasons	
+	height: 850px
+	background-color: $submain-color						
+		
