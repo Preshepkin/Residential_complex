@@ -5,35 +5,31 @@
 .container	
 	width: 1140px
 	margin: 0 auto
+	position: relative
 
 .complex	
+	position: relative
 	height: 840px
 	background: url('../img/complex.jpg') center center/cover no-repeat
 
 header
 	padding: 0 0 74px 0
-	
-	
-nav
-	display: flex
-	justify-content: space-between	
-	
-.menu	
-	display: flex
+.menu
+	margin-top: 55px
 	&_link
 		display: flex
-		margin-top: 55px
+		justify-content: space-between
 		list-style: none
 		&_list
 			text-decoration: none
 			font-family: 'Raleway'
 			font-style: normal
-			font-weight: 400
 			font-size: 14px
 			line-height: 16px
 			letter-spacing: 0.05em
 			color: #FFFFFF
-			margin: 0 40px
+
+
 .logo_house	
 	display: block
 	&_vop
@@ -43,7 +39,6 @@ nav
 		margin-top: 15px
 		font-family: 'Raleway'
 		font-style: normal
-		font-weight: 400
 		font-size: 12px
 		line-height: 14px
 		letter-spacing: 0.12em
@@ -57,18 +52,15 @@ nav
 		display: flex
 		justify-content: space-around
 		margin-top: 200px
-		position: relative
 .links_item
 	position: relative
 	text-decoration: none		
 	font-family: 'Raleway'
-	font-style: normal
 	font-weight: 400
 	font-size: 18px
 	line-height: 21px
 	text-align: center
 	color: #FFFFFF
-	// margin: 0 100px
 	&::before
 		content: ''
 		position: absolute
@@ -82,12 +74,10 @@ nav
 		text-decoration: none		
 		font-family: 'Raleway'
 		font-style: normal
-		font-weight: 400
 		font-size: 18px
 		line-height: 21px
 		text-align: center
 		color: #FFFFFF
-		// margin: 0 100px
 		&:before
 			content: ''
 			position: absolute
@@ -98,6 +88,7 @@ nav
 			background: url('../icons/phone-call.svg') center center/cover no-repeat
 
 .reasons	
-	height: 850px
-	background-color: $submain-color						
-		
+	min-height: 850px
+	background-color: $submain-color
+	&_wrapper	
+		margin-top: 84px						
