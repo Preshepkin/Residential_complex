@@ -100,6 +100,8 @@ header
 				text-align: center
 				color: #FFFFFF	
 				margin-bottom: 120px
+		// &_txs
+		// 	margin-top: 53px
 
 	
 .following
@@ -117,12 +119,16 @@ header
 			font-size: 24px
 			line-height: 28px
 			color: #FFFFFF
-.calculate 	
+.calculate 
+	position: relative	
 	padding: 180px
 	min-height: 570px
 	background: url('../img/skyscraper.jpg') center center/cover no-repeat
 	&_wrapper
-		margin-top: 48px
+		margin-top: 27px
+		&_form
+			padding-right: 30px
+			
 		&_lorem
 			font-family: 'Raleway'
 			font-style: normal
@@ -130,12 +136,44 @@ header
 			font-size: 16px
 			line-height: 24px
 			color: #FFFFFF	
-			
-form
-	
-	input
-		width: 255px
-		height: 50px		
+		&_descr
+			display: inline-block
+			margin-top: 46px
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 13px
+			line-height: 16px
+			text-align: center
+			color: #E7E7E7
+			width: 255px
+			height: 28px
+
+input
+	font-family: 'Raleway'
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 27px
+	color: #BEBEBE
+	text-align: center
+	border: none
+	background: rgba(255, 252, 252, 0.228)
+	width: 255px
+	height: 50px
+	&:hover
+		box-shadow: 2px 2px 2px 3px $main-color
+
+
+.button_calculate	
+	font-family: 'Raleway'
+	font-style: normal
+	font-weight: 700
+	font-size: 16px
+	text-align: center
+	color: #FFFFFF
+	background: $main-color
+
 
 
 
