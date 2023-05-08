@@ -9,7 +9,7 @@
 
 .complex	
 	position: relative
-	height: 840px
+	min-height: 840px
 	background: url('../img/complex.jpg') center center/cover no-repeat
 
 header
@@ -28,8 +28,6 @@ header
 			line-height: 16px
 			letter-spacing: 0.05em
 			color: #FFFFFF
-
-
 .logo_house	
 	display: block
 	&_vop
@@ -46,45 +44,44 @@ header
 	&_mouse
 		margin-top: 100px
 		text-align: center	
-
-.subcomplex_wrapper
+	&_wrapper
 		display: flex
-		justify-content: space-around
-		margin-top: 200px
-.links_item
-	position: relative
-	text-decoration: none		
-	font-family: 'Raleway'
-	font-weight: 400
-	font-size: 18px
-	line-height: 21px
-	text-align: center
-	color: #FFFFFF
-	&::before
-		content: ''
-		position: absolute
-		top: 0px
-		left: -26px
-		width: 15px
-		height: 21px
-		background: url('../icons/Group.svg') center center/cover no-repeat
-.links_items
-		position: relative
-		text-decoration: none		
-		font-family: 'Raleway'
-		font-style: normal
-		font-size: 18px
-		line-height: 21px
-		text-align: center
-		color: #FFFFFF
-		&:before
-			content: ''
-			position: absolute
-			top: 0px
-			left: -26px
-			width: 15px
-			height: 21px
-			background: url('../icons/phone-call.svg') center center/cover no-repeat
+		justify-content: space-evenly
+		margin-top: 215px
+		&_links
+			position: relative
+			text-decoration: none		
+			font-family: 'Raleway'
+			font-weight: 400
+			font-size: 18px
+			line-height: 21px
+			text-align: center
+			color: #FFFFFF
+			&::before
+				content: ''
+				position: absolute
+				top: 0px
+				left: -26px
+				width: 15px
+				height: 21px
+				background: url('../icons/Group.svg') center center/cover no-repeat
+		&_items
+			position: relative
+			text-decoration: none		
+			font-family: 'Raleway'
+			font-style: normal
+			font-size: 18px
+			line-height: 21px
+			text-align: center
+			color: #FFFFFF
+			&:before
+				content: ''
+				position: absolute
+				top: 0px
+				left: -26px
+				width: 15px
+				height: 21px
+				background: url('../icons/phone-call.svg') center center/cover no-repeat
 
 .reasons	
 	min-height: 840px
@@ -100,4 +97,61 @@ header
 				font-size: 20px
 				line-height: 27px
 				text-align: center
-				color: #FFFFFF		
+				color: #FFFFFF	
+				margin-bottom: 60px
+				
+.following
+	min-height: 770px
+	margin-top: 60px
+	&_wrapper
+		position: relative
+		margin-top: 40px
+		&_descr
+			position: absolute
+			padding: 248px 132px 50px 50px
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 24px
+			line-height: 28px
+			color: #FFFFFF
+.calculate 	
+	min-height: 560px
+	background: url('../img/skyscraper.jpg') center center/cover no-repeat
+	&_wrapper
+		margin-top: 180px
+		&_lorem
+			margin-top: 50px
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 16px
+			line-height: 24px
+			color: #FFFFFF
+		// &_we
+		// 	font-family: 'Raleway'
+		// 	font-style: normal
+		// 	font-weight: 400
+		// 	font-size: 13px
+		// 	line-height: 16px
+		// 	text-align: center
+		// 	color: #E7E7E7	
+		&_form
+			margin-top: 34px
+
+form
+	
+	input
+		padding: 12px 84px 12px 84px
+		width: 255px
+		height: 50px
+		background: rgba(255, 255, 255, 0.203) 
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		line-height: 27px
+		color: #BEBEBE
+
+
+
