@@ -137,10 +137,10 @@
 				</div>
 			</section>
 	</section>
-		<section class="calculate">
-			<div class="container">
+	<section class="calculate">
+		<div class="container">
 				<h2 class="title_left">Рассчитать стоимость</h2>
-					<div class="row">
+					<div class="row justify-content-between">
 						<div class="col-md-6">
 							<div class="calculate_wrapper">
 								<div class="calculate_wrapper_lorem">
@@ -148,20 +148,60 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 ">
 							<div class="calculate_wrapper">
 							<form action="#" class="calculate_wrapper_form">
-								<input type="name" maxlength='10' required  placeholder="Ваше имя">
-								<input type="tel" maxlength='20'  required  placeholder="Ваш телефон">
+								<input type="text" name="name" minlength='3' required placeholder="Ваше имя">
+								<input type="tel" name="number" minlength='10' required placeholder="Ваш телефон">
 								<div class="calculate_wrapper_descr">
 									*Мы никому не передаем ваши данные. 
 									И не сохраняем ваш номер в базу.</div>
-								<input class="button_calculate" type="button" required  value='Заказать звонок'> 
+								<input class="button_calculate" type="button"   value='Заказать звонок'> 
 							</form>
 						</div>
 					</div>
-				</div>		
-		</section>		
+				</div>	
+			</div>		
+		</section>
+	<section class="wolking">
+					<div class="container">
+						<h2 class="title_left">Рабочие моменты</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="wolking_wrapper">
+									<img src="icons/icon/play.svg" alt="play" class="wolking_wrapper_play">
+									<img src="img/video-min.jpg" alt="video">
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>	
+	<section class="district">
+		<div class="container">
+			<h2 class="title_left">Район на карте</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236685033!2d30.337639216097188!3d59.94467898187832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODc!5e0!3m2!1sru!2sru!4v1683598265756!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+	</section>	
+	<section class="questions">
+		<div class="container">
+			<h2 class="title_left">Остались вопросы ?</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="questions_wrapper">
+						<form action="#" class="questions_wrapper_form">
+							<div class="questions_wrapper_descr">
+								*Мы никому не передаем ваши данные. 
+								И не сохраняем ваш номер в базу.</div>
+							<input type="text" name="name" minlength='3' required placeholder="Ваше имя">
+							<input type="tel" name="number" minlength='10' required placeholder="Ваш телефон">
+							<input class="button_calculate" type="button"   value='Заказать звонок'> 
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
 </body>
 </html>
 

@@ -1,6 +1,7 @@
 @import 'base/mixins'
 @import 'base/variables'
 @import 'block/title'
+@import 'block/buttons'
 	
 .container	
 	position: relative
@@ -127,8 +128,10 @@ header
 	&_wrapper
 		margin-top: 27px
 		&_form
-			padding-right: 30px
-			
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-end
 		&_lorem
 			font-family: 'Raleway'
 			font-style: normal
@@ -153,26 +156,54 @@ input
 	font-family: 'Raleway'
 	font-style: normal
 	font-weight: 400
-	font-size: 14px
-	line-height: 27px
 	color: #BEBEBE
 	text-align: center
 	border: none
 	background: rgba(255, 252, 252, 0.228)
 	width: 255px
 	height: 50px
-	&:hover
-		box-shadow: 2px 2px 2px 3px $main-color
+.wolking	
+	background: $submain-color
+	min-height: 530px
+	position: relative
+	&_wrapper
+		position: relative
+		margin-top: 108px
+		&_play	
+			position: absolute
+			padding: 220px 478px 220px 478px
+.district
+	padding: 173px
+	min-height: 500px
+	background: $submain-color
+iframe
+	margin-top: 100px
+	width: 100%
+	height: 358px
+
+.questions	
+	padding: 183px
+	min-height: 300px
+	background: $submain-color 
+	&_wrapper
+		margin-top: 50px
+		&_form
+			display: flex
+			justify-content: space-between
+		&_descr
+			display: inline-block
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 13px
+			line-height: 16px
+			text-align: center
+			color: #E7E7E7
+			width: 255px
+			height: 28px
 
 
-.button_calculate	
-	font-family: 'Raleway'
-	font-style: normal
-	font-weight: 700
-	font-size: 16px
-	text-align: center
-	color: #FFFFFF
-	background: $main-color
+
 
 
 
