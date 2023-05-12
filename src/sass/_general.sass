@@ -1,12 +1,10 @@
 .container	
-	position: relative
 	width: 1140px
 	margin: 0 auto
 	
 header
+	padding: 0 0 74px 0
 	
-	
-
 .complex	
 	height: 840px
 	background: url('../img/complex.jpg') center center/cover no-repeat
@@ -31,7 +29,7 @@ header
 		display: block
 		&_vop
 			margin-top: 30px
-			width: 100%
+			// width: 100%
 	&_services
 		display: block
 		margin-top: 15px
@@ -84,7 +82,7 @@ header
 				background: url('../icons/phone-call.svg') center center/cover no-repeat
 
 .reasons	
-	min-height: 840px
+	min-height: 1226px
 	background-color: $submain-color 
 	&_wrapper
 		margin-top: 100px
@@ -99,11 +97,7 @@ header
 				text-align: center
 				color: #FFFFFF
 				margin-bottom: 120px
-
-	
 .following
-	min-height: 770px
-	background-color: $submain-color 
 	&_wrapper
 		margin-top: 100px
 		position: relative
@@ -118,9 +112,9 @@ header
 			font-size: 24px
 			line-height: 28px
 			color: #FFFFFF
+			margin-bottom: 180px
 .calculate 	
-	position: relative
-	padding: 180px
+	padding: 180px 0 0 0
 	min-height: 560px
 	background: url('../img/skyscraper.jpg') center center/cover no-repeat
 	&_wrapper
@@ -193,6 +187,7 @@ input
 	width: 255px
 	height: 50px
 .wolking	
+	padding: 161px 0 0 0
 	background: $submain-color
 	min-height: 530px
 	position: relative
@@ -200,14 +195,10 @@ input
 		position: relative
 		margin-top: 108px
 		padding-left: 30px
-		&_play	
-			display: block
-			position: absolute
-			padding: 220px 478px 220px 478px
 		&_video
-			width: 100%	
+			width: 100%
 .district
-	padding: 173px
+	padding: 173px 0 0 0
 	min-height: 500px
 	background: $submain-color
 iframe
@@ -216,7 +207,7 @@ iframe
 	height: 360px
 
 .questions	
-	padding: 183px
+	padding: 183px 0 180px 0
 	min-height: 300px
 	background: $submain-color 
 	&_wrapper
@@ -235,9 +226,29 @@ iframe
 			color: #E7E7E7
 			width: 255px
 			height: 28px
+.questions	
+	&_wrapper_one
+		margin-top: 50px
+		&_form
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-end
+			width: 540px
+		&_descr
+			display: inline-block
+			font-family: 'Raleway'
+			font-style: normal
+			font-weight: 400
+			font-size: 13px
+			line-height: 16px
+			text-align: center
+			color: #E7E7E7
+			width: 255px
+			height: 28px			
 
 footer
-	padding: 72px
+	padding: 72px 0 0 0
 	min-height: 272px
 	background: #2D343C
 
@@ -270,12 +281,18 @@ footer
 					color: #FFFFFF
 					color: $main-color
 					text-decoration: none
-
 			&_social
 				display: flex
 				justify-content: space-around
 				margin-top: 51px
-				
+.menu_link_list
+	text-decoration: none
+	font-family: 'Raleway'
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 16px
+	color: #FFFFFF				
 // .pageup
 // 	display: inline
 // 	position: relative
@@ -285,9 +302,11 @@ footer
 // 		right: 65px
 // 		width: 65px
 // 		height: 65px
-.calculate_wrapper
+
 .calculate_wrapper_one
-	display: none			
+	display: none		
+.questions_wrapper_one		
+	display: none
 
 
 
