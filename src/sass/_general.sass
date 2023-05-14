@@ -25,9 +25,11 @@ header
 					
 
 .logo_house	
+	display: inline-block
 	&_link	
-		display: block
+		display: inline-block
 		&_vop
+			display: inline-block
 			margin-top: 30px
 	&_services
 		display: block
@@ -40,12 +42,12 @@ header
 .subcomplex	
 	// padding: 200px 0 0 0
 	&_mouse
-		margin-top: 100px
+		margin-top: 125px
 		text-align: center	
 	&_wrapper
 		display: flex
 		justify-content: space-evenly
-		margin-top: 215px
+		margin-top: 205px
 		&_links
 			position: relative
 			text-decoration: none		
@@ -195,7 +197,6 @@ header
 	&_wrapper_sm
 		margin-top: 30px
 		line-height: 75px
-		&_form
 		
 
 
@@ -336,8 +337,7 @@ footer
 // 		right: 65px
 // 		width: 65px
 // 		height: 65px
-.btn-primarymain
-	color: $main-color
+
 .offcanvas-bodyli
 	list-style: none
 .offcanvas-bodylist
@@ -345,12 +345,58 @@ footer
 	font-style: normal
 	text-decoration: none
 	font-weight: 400
-	font-size: 14px
-	line-height: 16px
+	font-size: 20px
+	line-height: 55px
+	color: #FFFFFF
+	padding-left: 20px
+	&:hover
+		color: $main-color
 	li
 		list-style-type: none
+.offcanvas	
+	background-color:#2D343C
+	font-family: 'Raleway'
+	color: #FFFFFF 
+	font-weight: 400px
+	&
+		width: 100%
+	
+.offcanvas,.offcanvas-lg,.offcanvas-md,.offcanvas-sm,.offcanvas-xl,.offcanvas-xxl
+	--bs-offcanvas-width:100%
+
+.btn-close
+	// background: $main-color
+	&:focus
+		box-shadow: 0 0 0 0.25rem #d4c17f
 
 	
+.btn	
+	font-family: 'Raleway'
+	font-style: normal
+	font-weight: 700
+	text-align: center
+	border-radius: 0%	
+	&:hover
+		color: #2D343C
+		background: $main-color
+		border-color: $main-color	
+		&:active
+			color: #2D343C
+			background: $main-color
+			border-color: $main-color
+	&:disabled
+		color: #2D343C
+		background: $main-color
+		border-color: $main-color			
+	&-primary
+		background: $main-color
+		border-color: $main-color
+
+
+.off
+	display: none
+	margin-top: 30px	
+
 
 
 
